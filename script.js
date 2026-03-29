@@ -40,3 +40,25 @@ if (plantCards.length > 0 && plantModal && closePlantModal) {
     }
   });
 }
+
+const identifyOpenButtons = document.querySelectorAll(".identify-open-btn");
+const identifyModal = document.getElementById("identifyModal");
+const closeIdentifyModal = document.getElementById("closeIdentifyModal");
+
+if (identifyOpenButtons.length > 0 && identifyModal && closeIdentifyModal) {
+  identifyOpenButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      identifyModal.classList.remove("hidden");
+    });
+  });
+
+  closeIdentifyModal.addEventListener("click", () => {
+    identifyModal.classList.add("hidden");
+  });
+
+  identifyModal.addEventListener("click", (event) => {
+    if (event.target === identifyModal) {
+      identifyModal.classList.add("hidden");
+    }
+  });
+}
