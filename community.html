@@ -51,7 +51,7 @@
       <div class="community-posts-header">
         <h2>RECENT POSTS</h2>
         <div class="community-post-buttons">
-          <button class="community-small-btn">+ Make a Post</button>
+          <button class="community-small-btn make-post-open-btn" type="button">+ Make a Post</button>
           <button class="community-small-btn">⌂ My Posts</button>
         </div>
       </div>
@@ -63,7 +63,7 @@
           <div class="community-post-main">
             <div class="community-post-top">
               <div class="community-post-title-row">
-                <h3>Post Name</h3>
+                <h3><a href="postDetails.html" class="post-detail-link">Post Name</a></h3>
                 <span class="post-tag">Tip</span>
               </div>
               <div class="community-post-date">dd/mm/yyyy<br>hh:mm</div>
@@ -75,7 +75,10 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...show more
             </p>
 
-            <div class="community-post-icons">♡ ⤴</div>
+            <div class="community-post-icons">
+                <button type="button" class="post-icon-btn edit-post-open-btn">✎</button>
+                ♡ ⤴
+            </div>
           </div>
         </article>
 
@@ -85,7 +88,7 @@
           <div class="community-post-main">
             <div class="community-post-top">
               <div class="community-post-title-row">
-                <h3>Post Name</h3>
+                <h3><a href="postDetails.html" class="post-detail-link">Post Name</a></h3>
                 <span class="post-tag">Discussion</span>
               </div>
               <div class="community-post-date">dd/mm/yyyy<br>hh:mm</div>
@@ -97,7 +100,10 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...show more
             </p>
 
-            <div class="community-post-icons">♡ ⤴</div>
+            <div class="community-post-icons">
+                <button type="button" class="post-icon-btn edit-post-open-btn">✎</button>
+                ♡ ⤴
+            </div>
           </div>
         </article>
 
@@ -107,7 +113,7 @@
           <div class="community-post-main">
             <div class="community-post-top">
               <div class="community-post-title-row">
-                <h3>Post Name</h3>
+                <h3><a href="postDetails.html" class="post-detail-link">Post Name</a></h3>
                 <span class="post-tag">Discovery</span>
               </div>
               <div class="community-post-date">dd/mm/yyyy<br>hh:mm</div>
@@ -119,7 +125,10 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...show more
             </p>
 
-            <div class="community-post-icons">♡ ⤴</div>
+            <div class="community-post-icons">
+                <button type="button" class="post-icon-btn edit-post-open-btn">✎</button>
+                ♡ ⤴
+            </div>
           </div>
         </article>
       </div>
@@ -154,6 +163,84 @@
       <a href="gallery.html" class="community-gallery-btn">⌲ View Gallery</a>
     </aside>
   </main>
+
+  <!-- MAKE POST MODAL -->
+<div class="post-modal hidden" id="makePostModal">
+  <div class="post-modal-content">
+    <button class="post-modal-close" id="closeMakePostModal">&times;</button>
+
+    <h2>MAKE A POST</h2>
+
+    <form class="post-form">
+      <label for="make-post-name">Post Name:</label>
+      <input type="text" id="make-post-name" placeholder="e.g. Three best ways to grow tomatoes" />
+
+      <label for="make-post-category">Category:</label>
+      <select id="make-post-category">
+        <option>Tips</option>
+        <option>Discussion</option>
+        <option>Discovery</option>
+      </select>
+
+      <label for="make-post-description">Description:</label>
+      <textarea id="make-post-description" placeholder="Share your thoughts!"></textarea>
+
+      <label>Upload Pictures:</label>
+      <div class="post-upload-row">
+        <div class="post-upload-box">
+          <div class="upload-icon">◌⌁</div>
+          <p>Drag Image</p>
+        </div>
+
+        <div class="post-upload-actions">
+          <a href="postDetails.html" class="post-upload-btn">📷 Take Picture</a>
+          <a href="postDetails.html" class="post-upload-btn">⤴ Upload from Device</a>
+        </div>
+      </div>
+
+      <button type="submit" class="post-submit-btn">Submit Post</button>
+    </form>
+  </div>
+</div>
+
+<!-- EDIT POST MODAL -->
+<div class="post-modal hidden" id="editPostModal">
+  <div class="post-modal-content">
+    <button class="post-modal-close" id="closeEditPostModal">&times;</button>
+
+    <h2>EDIT POST</h2>
+
+    <form class="post-form">
+      <label for="edit-post-name">Post Name:</label>
+      <input type="text" id="edit-post-name" placeholder="e.g. Three best ways to grow tomatoes" />
+
+      <label for="edit-post-category">Category:</label>
+      <select id="edit-post-category">
+        <option>Tips</option>
+        <option>Discussion</option>
+        <option>Discovery</option>
+      </select>
+
+      <label for="edit-post-description">Description:</label>
+      <textarea id="edit-post-description" placeholder="Share your thoughts!"></textarea>
+
+      <label>Upload Pictures:</label>
+      <div class="post-upload-row">
+        <div class="post-upload-box">
+          <div class="upload-icon">◌⌁</div>
+          <p>Drag Image</p>
+        </div>
+
+        <div class="post-upload-actions">
+          <a href="postDetails.html" class="post-upload-btn">📷 Take Picture</a>
+          <a href="postDetails.html" class="post-upload-btn">⤴ Upload from Device</a>
+        </div>
+      </div>
+
+      <button type="submit" class="post-submit-btn">Submit Changes</button>
+    </form>
+  </div>
+</div>
 
   <script src="script.js"></script>
 </body>

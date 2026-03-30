@@ -62,3 +62,47 @@ if (identifyOpenButtons.length > 0 && identifyModal && closeIdentifyModal) {
     }
   });
 }
+const makePostOpenButtons = document.querySelectorAll(".make-post-open-btn");
+const editPostOpenButtons = document.querySelectorAll(".edit-post-open-btn");
+
+const makePostModal = document.getElementById("makePostModal");
+const editPostModal = document.getElementById("editPostModal");
+
+const closeMakePostModal = document.getElementById("closeMakePostModal");
+const closeEditPostModal = document.getElementById("closeEditPostModal");
+
+if (makePostOpenButtons.length > 0 && makePostModal && closeMakePostModal) {
+  makePostOpenButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      makePostModal.classList.remove("hidden");
+    });
+  });
+
+  closeMakePostModal.addEventListener("click", () => {
+    makePostModal.classList.add("hidden");
+  });
+
+  makePostModal.addEventListener("click", (event) => {
+    if (event.target === makePostModal) {
+      makePostModal.classList.add("hidden");
+    }
+  });
+}
+
+if (editPostOpenButtons.length > 0 && editPostModal && closeEditPostModal) {
+  editPostOpenButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      editPostModal.classList.remove("hidden");
+    });
+  });
+
+  closeEditPostModal.addEventListener("click", () => {
+    editPostModal.classList.add("hidden");
+  });
+
+  editPostModal.addEventListener("click", (event) => {
+    if (event.target === editPostModal) {
+      editPostModal.classList.add("hidden");
+    }
+  });
+}
