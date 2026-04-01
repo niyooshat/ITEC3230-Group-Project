@@ -1004,14 +1004,14 @@ Featured Plants
   grid-template-columns: 25% 1fr 25%;
   min-height: calc(100vh - 76px);
 }
- 
+
 .profile-left,
 .profile-right {
   background: #8faf89;
   padding: 20px 16px;
   color: white;
 }
- 
+
 .profile-left h2,
 .profile-right h2 {
   text-align: center;
@@ -1021,17 +1021,19 @@ Featured Plants
   line-height: 1.3;
   margin-bottom: 14px;
 }
- 
+
 .identified-count,
 .posts-count {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 16px;
   font-size: 22px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 14px;
 }
- 
+
 .count-number {
   font-size: 22px;
   letter-spacing: 2px;
@@ -1100,15 +1102,17 @@ Featured Plants
   letter-spacing: 3px;
   font-weight: 500;
   margin-bottom: 28px;
+  margin-top:15%;
 }
  
 .profile-card {
   width: 100%;
-  max-width: 260px;
+  max-width: 350px;
   background: #bccbb4;
   border-radius: 4px;
   padding: 14px 10px 12px;
   text-align: center;
+  margin-bottom:25%;
 }
  
 .profile-handle {
@@ -1119,8 +1123,8 @@ Featured Plants
 }
  
 .profile-photo {
-  width: 72px;
-  height: 72px;
+  width: 90px;
+  height: 90px;
   margin: 0 auto 12px;
   border-radius: 50%;
   overflow: hidden;
@@ -1137,7 +1141,7 @@ Featured Plants
 }
  
 .about-section h3 {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 6px;
 }
  
@@ -1145,7 +1149,7 @@ Featured Plants
   background: white;
   border-radius: 4px;
   padding: 8px;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.35;
   min-height: 56px;
 }
