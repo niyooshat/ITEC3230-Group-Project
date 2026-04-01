@@ -998,78 +998,79 @@ Featured Plants
   margin-top: 6px;
 }
 /* the profile page */
+/* the profile page */
 .profile-layout {
   display: grid;
-  grid-template-columns: 160px 1fr 180px;
+  grid-template-columns: 25% 1fr 25%;
   min-height: calc(100vh - 76px);
 }
-
+ 
 .profile-left,
 .profile-right {
   background: #8faf89;
-  padding: 12px 10px;
+  padding: 20px 16px;
   color: white;
 }
-
+ 
 .profile-left h2,
 .profile-right h2 {
   text-align: center;
-  font-size: 17px;
-  letter-spacing: 3px;
-  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 4px;
+  font-weight: 600;
   line-height: 1.3;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
-
+ 
 .identified-count,
 .posts-count {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6px;
-  margin-bottom: 12px;
-  font-size: 16px;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-size: 22px;
 }
-
+ 
 .count-number {
-  font-size: 16px;
+  font-size: 22px;
   letter-spacing: 2px;
 }
-
+ 
 .identified-list,
 .posts-list {
   display: flex;
   flex-direction: column;
   gap: 0;
 }
-
+ 
 .identified-item {
   background: #f4f4f4;
   color: #1f1f1f;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 6px 8px;
+  padding: 9px 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
+ 
 .identified-item p {
-  font-size: 9px;
-  margin-bottom: 1px;
+  font-size: 13px;
+  margin-bottom: 2px;
 }
-
+ 
 .identified-item small {
-  font-size: 6px;
+  font-size: 10px;
   color: #444;
 }
-
+ 
 .profile-left-buttons {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
   margin-top: 50px;
 }
-
+ 
 .profile-action-btn,
 .make-post-btn {
   display: block;
@@ -1079,13 +1080,13 @@ Featured Plants
   border: none;
   background: #a4bb84;
   color: #1f1f1f;
-  border-radius: 16px;
-  padding: 12px 10px;
-  font-size: 13px;
+  border-radius: 20px;
+  padding: 14px 10px;
+  font-size: 15px;
   letter-spacing: 1px;
   cursor: pointer;
 }
-
+ 
 .profile-center {
   background: #e9e2db;
   padding: 38px 20px;
@@ -1093,14 +1094,14 @@ Featured Plants
   flex-direction: column;
   align-items: center;
 }
-
+ 
 .profile-welcome {
   font-size: 18px;
   letter-spacing: 3px;
   font-weight: 500;
   margin-bottom: 28px;
 }
-
+ 
 .profile-card {
   width: 100%;
   max-width: 260px;
@@ -1109,14 +1110,14 @@ Featured Plants
   padding: 14px 10px 12px;
   text-align: center;
 }
-
+ 
 .profile-handle {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 2px;
   margin-bottom: 10px;
 }
-
+ 
 .profile-photo {
   width: 72px;
   height: 72px;
@@ -1124,22 +1125,22 @@ Featured Plants
   border-radius: 50%;
   overflow: hidden;
 }
-
+ 
 .profile-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
+ 
 .about-section {
   text-align: left;
 }
-
+ 
 .about-section h3 {
   font-size: 14px;
   margin-bottom: 6px;
 }
-
+ 
 .about-box {
   background: white;
   border-radius: 4px;
@@ -1148,7 +1149,7 @@ Featured Plants
   line-height: 1.35;
   min-height: 56px;
 }
-
+ 
 .edit-profile-btn {
   margin-top: 10px;
   border: none;
@@ -1160,50 +1161,50 @@ Featured Plants
   letter-spacing: 1px;
   cursor: pointer;
 }
-
+ 
 .post-item {
   background: #f4f4f4;
   color: #1f1f1f;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 4px 6px 6px;
+  padding: 8px 10px 10px;
 }
-
+ 
 .post-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 6px;
 }
-
+ 
 .post-header h3 {
-  font-size: 10px;
-  margin-bottom: 2px;
+  font-size: 14px;
+  margin-bottom: 3px;
 }
-
+ 
 .post-header span {
-  font-size: 7px;
+  font-size: 10px;
   text-align: right;
 }
-
+ 
 .post-item p {
-  font-size: 9px;
+  font-size: 12px;
   font-style: italic;
-  line-height: 1.25;
-  margin: 4px 0 2px;
+  line-height: 1.35;
+  margin: 6px 0 4px;
 }
-
+ 
 .post-item a {
-  font-size: 9px;
+  font-size: 12px;
   color: #355f35;
   text-decoration: none;
 }
-
+ 
 .post-actions {
   text-align: right;
-  font-size: 12px;
-  margin-top: 2px;
+  font-size: 15px;
+  margin-top: 4px;
 }
-
+ 
 .make-post-btn {
   margin-top: 14px;
 }
