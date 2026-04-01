@@ -31,56 +31,58 @@
       </nav>
     </header>
 
-    <main class="identify-result-layout">
-      <section class="identify-preview-section">
-        <div class="identify-preview-box"></div>
-      </section>
-
-      <section class="identify-matches-section">
-        <h2>This looks like...</h2>
-
-        <div class="match-list">
-          <article class="match-item clickable-plant">
-            <div class="match-rank">1.</div>
-            <div class="match-info">
-              <h3>PLANT NAME</h3>
-              <p>95% match</p>
-            </div>
-            <div class="match-arrow">⟶</div>
-          </article>
-
-          <article class="match-item clickable-plant">
-            <div class="match-rank">2.</div>
-            <div class="match-info">
-              <h3>PLANT NAME</h3>
-              <p>63% match</p>
-            </div>
-            <div class="match-arrow">⟶</div>
-          </article>
-
-          <article class="match-item clickable-plant">
-            <div class="match-rank">3.</div>
-            <div class="match-info">
-              <h3>PLANT NAME</h3>
-              <p>48% match</p>
-            </div>
-            <div class="match-arrow">⟶</div>
-          </article>
-        </div>
+  <main class="identify-result-layout">
+      <div class="identify-top">
+        <section class="identify-preview-section">
+          <div class="identify-preview-box"></div>
+        </section>
+ 
+        <section class="identify-matches-section">
+          <h2>This looks like...</h2>
+ 
+          <div class="match-list">
+            <article class="match-item clickable-plant">
+              <div class="match-rank">1.</div>
+              <div class="match-info">
+                <h3>PLANT NAME</h3>
+                <p>95% match</p>
+              </div>
+              <div class="match-arrow">⟶</div>
+            </article>
+ 
+            <article class="match-item clickable-plant">
+              <div class="match-rank">2.</div>
+              <div class="match-info">
+                <h3>PLANT NAME</h3>
+                <p>63% match</p>
+              </div>
+              <div class="match-arrow">⟶</div>
+            </article>
+ 
+            <article class="match-item clickable-plant">
+              <div class="match-rank">3.</div>
+              <div class="match-info">
+                <h3>PLANT NAME</h3>
+                <p>48% match</p>
+              </div>
+              <div class="match-arrow">⟶</div>
+            </article>
+          </div>
+        </section>
+      </div>
+ 
+      <section class="identify-bottom-section">
+        <h2>Not what you were looking for?</h2>
+        <a href="search.html" class="identify-search-btn"
+          >Search in the Plants Database</a
+        >
       </section>
     </main>
-
-    <section class="identify-bottom-section">
-      <h2>Not what you were looking for?</h2>
-      <a href="search.html" class="identify-search-btn"
-        >Search in the Plants Database</a
-      >
-    </section>
-
+ 
     <div class="plant-modal hidden" id="plantModal">
       <div class="plant-modal-content">
         <button class="plant-modal-close" id="closePlantModal">&times;</button>
-
+ 
         <div class="plant-modal-layout">
           <div class="plant-gallery">
             <div class="plant-thumbnails">
@@ -88,12 +90,12 @@
               <img src="img1.jpg" alt="thumbnail 2" />
               <img src="img1.jpg" alt="thumbnail 3" />
             </div>
-
+ 
             <div class="plant-main-image">
               <img src="img1.jpg" alt="Dragon Tree" />
             </div>
           </div>
-
+ 
           <div class="plant-details-panel">
             <div class="plant-details-header">
               <div>
@@ -102,9 +104,9 @@
               </div>
               <span class="heart-icon">♡</span>
             </div>
-
+ 
             <div class="description-box">Description...</div>
-
+ 
             <div class="care-guide">
               <h3>Care Guide:</h3>
               <div class="care-grid">
@@ -126,23 +128,23 @@
                 </div>
               </div>
             </div>
-
+ 
             <div class="toxicity-section">
               <h3>Toxicity Level:</h3>
               <span class="toxicity-badge">Not toxic</span>
             </div>
-
+ 
             <div class="additional-info">
               <h3>Additional Info:</h3>
               <span>⌄</span>
             </div>
-
+ 
             <button class="garden-btn">+ Add to My Garden</button>
           </div>
         </div>
       </div>
     </div>
-
+ 
     <script src="script.js"></script>
   </body>
 </html>
