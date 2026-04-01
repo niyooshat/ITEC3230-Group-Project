@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veridian - Care Log</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="home-body">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-circle"></div>
+        <div class="brand-text">
+          <h1>VERIDIAN</h1>
+          <p>IDENTIFY, TRACK, THRIVE</p>
+        </div>
+      </div>
+
+      <div class="welcome-title page-title">CARE LOG</div>
+
+      <nav class="nav-links">
+        <a href="homeAfter.html">Home</a>
+        <span>|</span>
+        <a href="search.html">Search</a>
+        <span>|</span>
+        <a href="garden.html">Garden</a>
+        <span>|</span>
+        <a href="community.html">Community</a>
+        <span>|</span>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </header>
+
+    <main class="carelog-layout">
+      <section class="carelog-left">
+        <h2 class="carelog-heading">LOGGED CARE ACTIVITIES</h2>
+
+        <div class="carelog-filter-bar">
+          <span class="filter-label">FILTER BY:</span>
+          <button class="filter-pill active-pill">ALL</button>
+          <button class="filter-pill">PLANT</button>
+          <button class="filter-pill">ACTIVITY</button>
+          <button class="filter-pill">WEEK</button>
+        </div>
+
+        <div class="log-cards">
+          <article class="log-card">
+            <div class="log-card-top">
+              <h3>Record Name</h3>
+              <span>dd/mm/yyyy</span>
+            </div>
+            <p>Activity</p>
+            <p>Plant</p>
+            <p class="italic-line">Description</p>
+            <div class="log-icons">✐ 🗑</div>
+          </article>
+
+          <article class="log-card">
+            <div class="log-card-top">
+              <h3>Activity Plant</h3>
+              <span>dd/mm/yyyy</span>
+            </div>
+            <p class="italic-line">Description</p>
+            <div class="log-icons">✐ 🗑</div>
+          </article>
+
+          <article class="log-card">
+            <div class="log-card-top">
+              <h3>Planted Marigolds</h3>
+              <span>dd/mm/yyyy</span>
+            </div>
+            <p class="italic-line long-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+            <div class="log-icons">✐ 🗑</div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="carelog-right">
+        <div class="activity-form-card">
+          <h2>ADD A NEW ACTIVITY</h2>
+
+          <form class="activity-form">
+            <label for="activity-name">Name:</label>
+            <input type="text" id="activity-name" placeholder="Record #..." />
+
+            <label for="activity-type">Activity:</label>
+            <select id="activity-type">
+              <option>Fertilized</option>
+              <option>Watered</option>
+              <option>Repotted</option>
+            </select>
+
+            <label for="activity-plant">Plant:</label>
+            <select id="activity-plant">
+              <option>Succulent</option>
+              <option>Dragon Tree</option>
+              <option>Laceleaf</option>
+            </select>
+
+            <label for="activity-date">Date:</label>
+            <input type="text" id="activity-date" placeholder="dd/mm/yyyy" />
+
+            <label for="activity-description">Description:</label>
+            <textarea
+              id="activity-description"
+              placeholder="Put your notes here..."
+            ></textarea>
+
+            <button type="submit" class="submit-activity-btn">
+              Submit Activity Record
+            </button>
+          </form>
+        </div>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
