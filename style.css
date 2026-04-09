@@ -761,7 +761,7 @@ Featured Plants
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 }
  
 .garden-top-row {
@@ -772,7 +772,6 @@ Featured Plants
 
   gap: 20px;
   width: 100%;
-  max-width: 740px;
 }
  
 .garden-search {
@@ -784,6 +783,7 @@ Featured Plants
   flex-direction: column;
   gap: 10px;
   align-items: flex-end;
+  margin-left: auto;
 }
  
 .small-green-btn {
@@ -792,11 +792,13 @@ Featured Plants
   color: #1f1f1f;
   border-radius: 16px;
   padding: 10px 18px;
+  width: 170px;
   font-size: 12px;
   letter-spacing: 1px;
   cursor: pointer;
   white-space: nowrap;
   text-decoration: none;
+  text-align: center;
 }
  
 .garden-grid {
