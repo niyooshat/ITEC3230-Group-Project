@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veridian - Community</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="home-body">
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-circle"></div>
+      <div class="brand-text">
+        <h1>VERIDIAN</h1>
+        <p>IDENTIFY, TRACK, THRIVE</p>
+      </div>
+    </div>
+
+    <div class="welcome-title page-title">COMMUNITY</div>
+
+    <nav class="nav-links">
+      <a href="homeAfter.html">Home</a>
+      <span>|</span>
+      <a href="search.html">Search</a>
+      <span>|</span>
+      <a href="garden.html">Garden</a>
+      <span>|</span>
+      <a href="community.html">Community</a>
+      <span>|</span>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <main class="community-layout">
+    <section class="community-left">
+      <div class="community-search-wrap">
+        <div class="search-bar community-search-bar">
+          <span class="search-icon">⌕</span>
+          <input type="text" placeholder="Search Posts" />
+        </div>
+
+        <div class="community-filter-bar">
+          <span class="filter-label">FILTER BY:</span>
+          <button class="filter-pill active-pill">ALL</button>
+          <button class="filter-pill">TIPS</button>
+          <button class="filter-pill">DISCUSSIONS</button>
+          <button class="filter-pill">DISCOVERY</button>
+        </div>
+      </div>
+
+      <div class="community-posts-header">
+        <h2>RECENT POSTS</h2>
+        <div class="community-post-buttons">
+          <button class="community-small-btn make-post-open-btn" type="button">+ Make a Post</button>
+          <button class="community-small-btn">⌂ My Posts</button>
+        </div>
+      </div>
+
+      <div class="recent-posts-list">
+        <article class="community-post-card">
+          <div class="community-post-image"></div>
+
+          <div class="community-post-main">
+            <div class="community-post-top">
+              <div class="community-post-title-row">
+                <h3><a href="postDetails.html" class="post-detail-link">Post Name</a></h3>
+                <span class="post-tag">Tip</span>
+              </div>
+              <div class="community-post-date">dd/mm/yyyy<br>hh:mm</div>
+            </div>
+
+            <p class="community-post-user">by @username</p>
+
+            <p class="community-post-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...show more
+            </p>
+
+            <div class="community-post-icons">
+                <button type="button" class="post-icon-btn edit-post-open-btn">✎</button>
+                ♡ ⤴
+            </div>
+          </div>
+        </article>
+
+        <article class="community-post-card">
+          <div class="community-post-image"></div>
+
+          <div class="community-post-main">
+            <div class="community-post-top">
+              <div class="community-post-title-row">
+                <h3><a href="postDetails.html" class="post-detail-link">Post Name</a></h3>
+                <span class="post-tag">Discussion</span>
+              </div>
+              <div class="community-post-date">dd/mm/yyyy<br>hh:mm</div>
+            </div>
+
+            <p class="community-post-user">by @username</p>
+
+            <p class="community-post-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...show more
+            </p>
+
+            <div class="community-post-icons">
+                <button type="button" class="post-icon-btn edit-post-open-btn">✎</button>
+                ♡ ⤴
+            </div>
+          </div>
+        </article>
+
+        <article class="community-post-card">
+          <div class="community-post-image"></div>
+
+          <div class="community-post-main">
+            <div class="community-post-top">
+              <div class="community-post-title-row">
+                <h3><a href="postDetails.html" class="post-detail-link">Post Name</a></h3>
+                <span class="post-tag">Discovery</span>
+              </div>
+              <div class="community-post-date">dd/mm/yyyy<br>hh:mm</div>
+            </div>
+
+            <p class="community-post-user">by @username</p>
+
+            <p class="community-post-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...show more
+            </p>
+
+            <div class="community-post-icons">
+                <button type="button" class="post-icon-btn edit-post-open-btn">✎</button>
+                ♡ ⤴
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="pagination">
+        <span>&lt;</span>
+        <span>page 1 of 15</span>
+        <span>&gt;</span>
+      </div>
+    </section>
+
+    <aside class="community-right">
+      <h2>COMMUNITY GALLERY</h2>
+
+      <div class="community-gallery-grid">
+        <img src="img1.jpg" alt="gallery image 1" class="gallery-large">
+        <img src="img1.jpg" alt="gallery image 2" class="gallery-tall">
+
+        <img src="img1.jpg" alt="gallery image 3" class="gallery-large">
+        <img src="img1.jpg" alt="gallery image 4" class="gallery-tall">
+
+        <img src="img1.jpg" alt="gallery image 5" class="gallery-large">
+
+        <div class="community-gallery-small-grid">
+          <img src="img1.jpg" alt="small gallery 1">
+          <img src="img1.jpg" alt="small gallery 2">
+          <img src="img1.jpg" alt="small gallery 3">
+          <img src="img1.jpg" alt="small gallery 4">
+        </div>
+      </div>
+
+      <a href="gallery.html" class="community-gallery-btn">⌲ View Gallery</a>
+    </aside>
+  </main>
+
+  <!-- MAKE POST MODAL -->
+<div class="post-modal hidden" id="makePostModal">
+  <div class="post-modal-content">
+    <button class="post-modal-close" id="closeMakePostModal">&times;</button>
+
+    <h2>MAKE A POST</h2>
+
+    <form class="post-form">
+      <label for="make-post-name">Post Name:</label>
+      <input type="text" id="make-post-name" placeholder="e.g. Three best ways to grow tomatoes" />
+
+      <label for="make-post-category">Category:</label>
+      <select id="make-post-category">
+        <option>Tips</option>
+        <option>Discussion</option>
+        <option>Discovery</option>
+      </select>
+
+      <label for="make-post-description">Description:</label>
+      <textarea id="make-post-description" placeholder="Share your thoughts!"></textarea>
+
+      <label>Upload Pictures:</label>
+      <div class="post-upload-row">
+        <div class="post-upload-box">
+          <div class="upload-icon">◌⌁</div>
+          <p>Drag Image</p>
+        </div>
+
+        <div class="post-upload-actions">
+          <a href="postDetails.html" class="post-upload-btn">📷 Take Picture</a>
+          <a href="postDetails.html" class="post-upload-btn">⤴ Upload from Device</a>
+        </div>
+      </div>
+
+      <button type="submit" class="post-submit-btn">Submit Post</button>
+    </form>
+  </div>
+</div>
+
+<!-- EDIT POST MODAL -->
+<div class="post-modal hidden" id="editPostModal">
+  <div class="post-modal-content">
+    <button class="post-modal-close" id="closeEditPostModal">&times;</button>
+
+    <h2>EDIT POST</h2>
+
+    <form class="post-form">
+      <label for="edit-post-name">Post Name:</label>
+      <input type="text" id="edit-post-name" placeholder="e.g. Three best ways to grow tomatoes" />
+
+      <label for="edit-post-category">Category:</label>
+      <select id="edit-post-category">
+        <option>Tips</option>
+        <option>Discussion</option>
+        <option>Discovery</option>
+      </select>
+
+      <label for="edit-post-description">Description:</label>
+      <textarea id="edit-post-description" placeholder="Share your thoughts!"></textarea>
+
+      <label>Upload Pictures:</label>
+      <div class="post-upload-row">
+        <div class="post-upload-box">
+          <div class="upload-icon">◌⌁</div>
+          <p>Drag Image</p>
+        </div>
+
+        <div class="post-upload-actions">
+          <a href="postDetails.html" class="post-upload-btn">📷 Take Picture</a>
+          <a href="postDetails.html" class="post-upload-btn">⤴ Upload from Device</a>
+        </div>
+      </div>
+
+      <button type="submit" class="post-submit-btn">Submit Changes</button>
+    </form>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

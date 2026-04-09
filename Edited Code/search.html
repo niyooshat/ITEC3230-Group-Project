@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veridian - Search Plants</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="home-body">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-circle"></div>
+        <div class="brand-text">
+          <h1>VERIDIAN</h1>
+          <p>IDENTIFY, TRACK, THRIVE</p>
+        </div>
+      </div>
+
+      <div class="welcome-title page-title">SEARCH PLANTS</div>
+
+      <nav class="nav-links">
+        <a href="homeAfter.html">Home</a>
+        <span>|</span>
+        <a href="search.html">Search</a>
+        <span>|</span>
+        <a href="garden.html">Garden</a>
+        <span>|</span>
+        <a href="community.html">Community</a>
+        <span>|</span>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </header>
+
+    <main class="search-main">
+      <section class="search-top">
+        <div class="search-bar">
+          <span class="search-icon">⌕</span>
+          <input type="text" placeholder="Search Plants" />
+          <!--<span class="camera-icon">◙</span>-->
+          <a href="identifyWindow.html" class="camera-icon">◙</a>
+
+        </div>
+
+        <div class="filter-bar">
+          <span class="filter-label">FILTER BY:</span>
+          <button class="filter-pill active-pill">ALL</button>
+          <button class="filter-pill">LIGHT</button>
+          <button class="filter-pill">WATER</button>
+          <button class="filter-pill">TOXICITY</button>
+        </div>
+      </section>
+
+      <section class="search-grid">
+        <article class="plant-card clickable-plant">
+          <div class="plant-image"></div>
+          <div class="plant-info">
+              <div><p>Plant Name</p><small>Scientific Name</small></div>
+             <span class="plant-arrow">→</span>
+          </div>
+        </article>
+
+        <article class="plant-card clickable-plant">
+          <div class="plant-image"></div>
+          <div class="plant-info">
+            <div><p>Plant Name</p><small>Scientific Name</small></div>
+            <span class="plant-arrow">→</span>
+          </div>
+        </article>
+
+        <article class="plant-card clickable-plant">
+          <div class="plant-image"></div>
+          <div class="plant-info">
+            <div><p>Plant Name</p><small>Scientific Name</small></div>
+            <span class="plant-arrow">→</span>
+          </div>
+        </article>
+
+        <article class="plant-card clickable-plant">
+          <div class="plant-image"></div>
+          <div class="plant-info">
+            <div><p>Plant Name</p><small>Scientific Name</small></div>
+            <span class="plant-arrow">→</span>
+          </div>
+        </article>
+
+        <article class="plant-card clickable-plant">
+          <div class="plant-image"></div>
+          <div class="plant-info">
+            <div><p>Plant Name</p><small>Scientific Name</small></div>
+            <span class="plant-arrow">→</span>
+          </div>
+        </article>
+
+        <article class="plant-card clickable-plant">
+          <div class="plant-image"></div>
+          <div class="plant-info">
+            <div><p>Plant Name</p><small>Scientific Name</small></div>
+            <span class="plant-arrow">→</span>
+          </div>
+        </article>
+
+        <article class="plant-card clickable-plant">
+          <div class="plant-image"></div>
+          <div class="plant-info">
+            <div><p>Plant Name</p><small>Scientific Name</small></div>
+            <span class="plant-arrow">→</span>
+          </div>
+        </article>
+
+        <article class="plant-card">
+          <div class="plant-image"></div>
+          <div class="plant-info">
+            <div><p>Plant Name</p><small>Scientific Name</small></div>
+            <span class="plant-arrow">→</span>
+          </div>
+        </article>
+      </section>
+
+      <div class="pagination">
+        <span>&lt;</span>
+        <span>page 1 of 2</span>
+        <span>&gt;</span>
+      </div>
+    </main>
+    <div class="plant-modal hidden" id="plantModal">
+      <div class="plant-modal-content">
+        <button class="plant-modal-close" id="closePlantModal">&times;</button>
+
+        <div class="plant-modal-layout">
+          <div class="plant-gallery">
+            <div class="plant-thumbnails">
+              <img src="img1.jpg" alt="thumbnail 1" />
+              <img src="img1.jpg" alt="thumbnail 2" />
+              <img src="img1.jpg" alt="thumbnail 3" />
+            </div>
+
+            <div class="plant-main-image">
+              <img src="img1.jpg" alt="Dragon Tree" />
+            </div>
+          </div>
+
+          <div class="plant-details-panel">
+            <div class="plant-details-header">
+              <div>
+                <h2>Dragon Tree</h2>
+                <p class="scientific-name">(dracaena marginata)</p>
+              </div>
+              <span class="heart-icon">♡</span>
+            </div>
+
+            <div class="description-box">Description...</div>
+
+            <div class="care-guide">
+              <h3>Care Guide:</h3>
+              <div class="care-grid">
+                <div class="care-item">
+                  <strong>Sun</strong>
+                  <p>Light area or direct sunlight</p>
+                </div>
+                <div class="care-item">
+                  <strong>Water</strong>
+                  <p>Water sparingly</p>
+                </div>
+                <div class="care-item">
+                  <strong>Pot & Soil</strong>
+                  <p>Well draining potting mix</p>
+                </div>
+                <div class="care-item">
+                  <strong>Temperature</strong>
+                  <p>Minimum 54°F (12°C)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="toxicity-section">
+              <h3>Toxicity Level:</h3>
+              <span class="toxicity-badge">Not toxic</span>
+            </div>
+
+            <div class="additional-info">
+              <h3>Additional Info:</h3>
+              <span>⌄</span>
+            </div>
+
+            <button class="garden-btn">+ Add to My Garden</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

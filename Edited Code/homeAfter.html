@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veridian - Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="home-body">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-circle"></div>
+        <div class="brand-text">
+          <h1>VERIDIAN</h1>
+          <p>IDENTIFY, TRACK, THRIVE</p>
+        </div>
+      </div>
+
+      <div class="welcome-title">WELCOME!</div>
+
+      <nav class="nav-links">
+        <a href="homeAfter.html">Home</a>
+        <span>|</span>
+        <a href="search.html">Search</a>
+        <span>|</span>
+        <a href="garden.html">Garden</a>
+        <span>|</span>
+        <a href="community.html">Community</a>
+        <span>|</span>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </header>
+
+    <main class="home-main">
+      <!-- SEARCH -->
+      <section class="search-section">
+        <div class="search-bar">
+          <span class="search-icon">⌕</span>
+          <input type="text" placeholder="Search Plants" />
+          <span class="camera-icon">◙</span>
+        </div>
+      </section>
+
+      <!-- MAIN GRID -->
+      <section class="after-grid">
+        <!-- LEFT: FEATURED -->
+        <div class="plants-section">
+          <h2 class="featured-plants">FEATURED PLANTS</h2>
+
+          <div class="plant-grid two-by-two">
+            <article class="plant-card clickable-plant">
+              <div class="plant-image"></div>
+              <div class="plant-info">
+                <p>Plant Name</p>
+                <small>Scientific Name</small>
+                <span class="plant-arrow">→</span>
+              </div>
+            </article>
+
+            <article class="plant-card clickable-plant">
+              <div class="plant-image"></div>
+              <div class="plant-info">
+                <p>Plant Name</p>
+                <small>Scientific Name</small>
+                <span class="plant-arrow">→</span>
+              </div>
+            </article>
+
+            <article class="plant-card clickable-plant">
+              <div class="plant-image"></div>
+              <div class="plant-info">
+                <p>Plant Name</p>
+                <small>Scientific Name</small>
+                <span class="plant-arrow">→</span>
+              </div>
+            </article>
+
+            <article class="plant-card clickable-plant">
+              <div class="plant-image"></div>
+              <div class="plant-info">
+                <p>Plant Name</p>
+                <small>Scientific Name</small>
+                <span class="plant-arrow">→</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- CENTER: COMMUNITY -->
+        <div class="community-center">
+          <div class="community-card large">
+            <div class="community-image"></div>
+            <div class="community-info">
+              <h3>@username</h3>
+              <p>Date and Time Posted</p>
+              <p>Caption</p>
+              <a href="community.html" class="community-btn"
+                >Go To Community →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: RECENT -->
+        <div class="plants-section">
+          <h2 class="recently-identified">RECENTLY IDENTIFIED</h2>
+
+          <div class="plant-grid two-by-two">
+            <article class="plant-card clickable-plant">
+              <div class="plant-image"></div>
+              <div class="plant-info">
+                <p>Plant Name</p>
+                <small>Scientific Name</small>
+                <span class="plant-arrow">→</span>
+              </div>
+            </article>
+
+            <article class="plant-card clickable-plant">
+              <div class="plant-image"></div>
+              <div class="plant-info">
+                <p>Plant Name</p>
+                <small>Scientific Name</small>
+                <span class="plant-arrow">→</span>
+              </div>
+            </article>
+
+            <article class="plant-card clickable-plant">
+              <div class="plant-image"></div>
+              <div class="plant-info">
+                <p>Plant Name</p>
+                <small>Scientific Name</small>
+                <span class="plant-arrow">→</span>
+              </div>
+            </article>
+
+            <article class="plant-card clickable-plant">
+              <div class="plant-image"></div>
+              <div class="plant-info">
+                <p>Plant Name</p>
+                <small>Scientific Name</small>
+                <span class="plant-arrow">→</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="plant-modal hidden" id="plantModal">
+      <div class="plant-modal-content">
+        <button class="plant-modal-close" id="closePlantModal">&times;</button>
+
+        <div class="plant-modal-layout">
+          <div class="plant-gallery">
+            <div class="plant-thumbnails">
+              <img src="img1.jpg" alt="thumbnail 1" />
+              <img src="img1.jpg" alt="thumbnail 2" />
+              <img src="img1.jpg" alt="thumbnail 3" />
+            </div>
+
+            <div class="plant-main-image">
+              <img src="img1.jpg" alt="Dragon Tree" />
+            </div>
+          </div>
+
+          <div class="plant-details-panel">
+            <div class="plant-details-header">
+              <div>
+                <h2>Dragon Tree</h2>
+                <p class="scientific-name">(dracaena marginata)</p>
+              </div>
+              <span class="heart-icon">♡</span>
+            </div>
+
+            <div class="description-box">Description...</div>
+
+            <div class="care-guide">
+              <h3>Care Guide:</h3>
+              <div class="care-grid">
+                <div class="care-item">
+                  <strong>Sun</strong>
+                  <p>Light area or direct sunlight</p>
+                </div>
+                <div class="care-item">
+                  <strong>Water</strong>
+                  <p>Water sparingly</p>
+                </div>
+                <div class="care-item">
+                  <strong>Pot & Soil</strong>
+                  <p>Well draining potting mix</p>
+                </div>
+                <div class="care-item">
+                  <strong>Temperature</strong>
+                  <p>Minimum 54°F (12°C)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="toxicity-section">
+              <h3>Toxicity Level:</h3>
+              <span class="toxicity-badge">Not toxic</span>
+            </div>
+
+            <div class="additional-info">
+              <h3>Additional Info:</h3>
+              <span>⌄</span>
+            </div>
+
+            <button class="garden-btn">+ Add to My Garden</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
