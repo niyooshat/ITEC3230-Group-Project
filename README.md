@@ -54,7 +54,7 @@ This design follows a consistent layout with a shared navigation bar across all 
 
 ## Authors
 - Niyoosha Tahami 220154514
-- Olga Okhotnikova Okhotnikova 220778619
+- Olga Okhotnikova 220778619
 
 ## Links
 - Figma: https://www.figma.com/design/vYHrH8b0P9GQyGpw0ZGntj/ITEC3230-Group-Project?node-id=122-319&t=h6rQ9SP4FecYeEeM-1
